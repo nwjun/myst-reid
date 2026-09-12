@@ -1,0 +1,3 @@
+mode: per_view
+agg_method: by_id
+fpir_targets: [0.01]

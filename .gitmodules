@@ -1,0 +1,3 @@
+[submodule "wildlife-tools"]
+	path = wildlife-tools
+	url = https://github.com/WildlifeDatasets/wildlife-tools.git

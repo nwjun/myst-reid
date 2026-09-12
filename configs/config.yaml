@@ -1,0 +1,31 @@
+defaults:
+  - _self_
+  - dataset: seaturtleidheads
+  - model: wildlife
+  - evaluation: per_view
+
+# Output directory for results
+output_dir: outputs
+
+# Random seed for reproducibility
+seed: 42
+
+model:
+  img_size: [384, 384]
+  calibration: false 
+
+dataset:
+  name: ???
+  root: data
+  seed: 42
+  imposter_datasets: []
+
+evaluation:
+  include_imposters: true
+
+# Hydra configuration
+hydra:
+  run:
+    dir: ${output_dir}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  job:
+    chdir: true

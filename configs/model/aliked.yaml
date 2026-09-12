@@ -1,0 +1,11 @@
+type: local
+name: aliked
+enabled:
+  - aliked
+
+# Local matchers use multiple feature extractors:
+# - SuperPoint + LightGlue
+# - ALIKED + LightGlue
+# - DISK + LightGlue
+# - SIFT + LightGlue
+# - LoFTR
